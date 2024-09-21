@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            background-color: #333;
+            padding: 1rem;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        nav ul li {
+            color: white;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 16px;
+        }
+
+        header {
+            height: 400px;
+            background-image: url('hero.jpg');
+            /* Du kan ändra bilden */
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .section {
+            padding: 2rem;
+        }
+
+        .info-block,
+        .skills-block {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .info-block div,
+        .skills-block div {
+            width: 30%;
+            padding: 1rem;
+            background-color: #f0f0f0;
+            margin: 1rem 0;
+            text-align: center;
+        }
+
+        .blog-section {
+            padding: 2rem;
+            background-color: #fafafa;
+        }
+
+        .blog-post {
+            border: 1px solid #ddd;
+            padding: 1rem;
+            margin: 1rem 0;
+        }
+
+        .contact-form {
+            padding: 2rem;
+        }
+
+        .contact-form form {
+            display: flex;
+            flex-direction: column;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            padding: 1rem;
+            margin: 0.5rem 0;
+            border: 1px solid #ddd;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="#hero">Hem</a></li>
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="#skills">Färdigheter</a></li>
+            <li><a href="#blog">Blogg</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Bild -->
+    <header id="hero">
+        <h1>Välkommen till min portfolio</h1>
+        <p>Jag är en studerande FrontEnd Developer</p>
+    </header>
+
+    <!-- Säljande information (3 block) -->
+    <section class="section" id="about">
+        <h2>Om mig</h2>
+        <div class="info-block">
+            <div>
+                <h3>Block 1</h3>
+                <p>Säljande information om dina tjänster.</p>
+            </div>
+            <div>
+                <h3>Block 2</h3>
+                <p>Säljande information om dina projekt.</p>
+            </div>
+            <div>
+                <h3>Block 3</h3>
+                <p>Säljande information om dina erfarenheter.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="section" id="skills">
+        <h2>Mina Färdigheter</h2>
+        <div class="skills-block">
+            <div>
+                <h3>HTML & CSS</h3>
+                <p>Beskrivning av din färdighet.</p>
+            </div>
+            <div>
+                <h3>JavaScript</h3>
+                <p>Beskrivning av din färdighet.</p>
+            </div>
+            <div>
+                <h3>React</h3>
+                <p>Beskrivning av din färdighet.</p>
+            </div>
+            <div>
+                <h3>Node.js</h3>
+                <p>Beskrivning av din färdighet.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogg Sektion -->
+    <section class="section blog-section" id="blog">
+        <h2>Blogg</h2>
+        <div class="blog-post">
+            <h3>Blogg Inlägg 1</h3>
+            <p>Innehåll från ditt första blogg inlägg.</p>
+        </div>
+        <div class="blog-post">
+            <h3>Blogg Inlägg 2</h3>
+            <p>Innehåll från ditt andra blogg inlägg.</p>
+        </div>
+        <!-- Du kan lägga till fler blogg inlägg -->
+    </section>
+
+    <!-- Kontaktformulär -->
+    <section class="section contact-form" id="contact">
+        <h2>Kontakta mig</h2>
+        <form>
+            <input type="text" name="name" placeholder="Ditt namn" required>
+            <input type="email" name="email" placeholder="Din e-post" required>
+            <textarea name="message" placeholder="Ditt meddelande" rows="5" required></textarea>
+            <input type="submit" value="Skicka">
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Sebastian Ekström - Alla rättigheter förbehållna.</p>
+    </footer>
+
+</body>
+
+</html>
