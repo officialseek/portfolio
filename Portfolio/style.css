@@ -4,6 +4,30 @@ body {
     padding: 0;
 }
 
+#hero {
+    display: flex;
+    background-image: url(img/Sunset_cropped.jpg);
+    justify-content: center;
+    background-repeat: no-repeat;
+    max-width: 1905px;
+    height: 500px;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+
+
+/* Min logotype i navbaren */
+#logotype {
+    width: 100px;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+}
+
 nav {
     background-color: #333;
     padding: 1rem;
@@ -27,28 +51,28 @@ nav ul li a {
     padding: 8px 16px;
 }
 
-header {
+/* header {
     height: 400px;
-    background-image: url('hero.jpg');
-    /* Du kan ändra bilden */
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     text-align: center;
-}
+} */
 
 .section {
     padding: 2rem;
 }
 
-.info-block,.skills-block {
+.info-block,
+.skills-block {
     display: flex;
     justify-content: space-between;
 }
 
-.info-block div,.skills-block div {
+.info-block div,
+.skills-block div {
     width: 30%;
     padding: 1rem;
     background-color: #cdf5d7;
@@ -70,6 +94,7 @@ header {
 .contact-form {
     display: flex;
     align-items: end;
+    /*styr Kontaktform */
     flex-direction: column;
     padding: 2rem;
 }
@@ -78,7 +103,7 @@ header {
     display: flex;
     flex-direction: column;
     max-width: 400px;
-    
+
 }
 
 .contact-form input,
@@ -94,3 +119,26 @@ footer {
     text-align: center;
     padding: 1rem;
 }
+
+
+
+/* MediaQueries */
+
+
+@media screen and (min-width 400px) {
+    #hero {
+        max-width: 430px;
+        height 100vh;
+    }
+    #about {
+        display: flex;
+        flex-direction: column;
+    }
+    #skills {
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+

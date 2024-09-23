@@ -4,33 +4,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio - Sebastian Ekström</title>
     <link rel="stylesheet" href="style.css">
-    
-        
-    
+
+
+<!-- Sebastian Ekström - Inlämningsuppgift 2, HTML & CSS -->
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <nav>
-        <ul>
-            <li><a href="#hero">Hem</a></li>
-            <li><a href="#about">Om mig</a></li>
-            <li><a href="#skills">Färdigheter</a></li>
-            <li><a href="#blog">Blogg</a></li>
-            <li><a href="#contact">Kontakt</a></li>
-        </ul>
-    </nav>
+    <div class="Navbar">
+        <nav> 
+            <img src="img/seek.png" id="logotype" alt="logotype">
+            <ul>
+                <li><a href="#hero">Hem</a></li>
+                <li><a href="#about">Om mig</a></li>
+                <li><a href="#skills">Färdigheter</a></li>
+                <li><a href="#blog">Blogg</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+        </nav>
 
-    <!-- Hero Bild -->
-    <header id="hero">
-        <h1>Välkommen till min portfolio!</h1>
-        <p>Jag är en studerande FrontEnd Developer</p>
-    </header>
+        <!-- Min Hero sektion, anledning till container innan, pga css  -->
+        <div class="containerHero">
+            <header id="hero">
+                <!-- <img  id="heroimg" src="img/Sunset_cropped.jpg" alt="solnedgång"> -->
+                <h1>Välkommen till min portfolio!</h1>
+                <p>Jag är en studerande FrontEnd Developer</p>
 
-    <!-- Säljande information (3 block) -->
+            </header>
+        </div>
+    </div>
+
+    <!-- Säljande information om mig som utvecklare med färdigheter och intressen,
+     samt vidarebefodran till Om mig sektionen-->
+
     <section class="section" id="about">
         <h2>Om mig</h2>
         <div class="info-block">
@@ -72,21 +81,23 @@
         </div>
     </section>
 
-    <!-- Blogg Sektion -->
+    <!-- Blogg sektion med inlägg + bilder samt vidarebefordan till blog sektionen-->
     <section class="section blog-section" id="blog">
         <h2>Blogg</h2>
         <div class="blog-post">
             <h3>Starten</h3>
-            <p>Den 27 Augusti var starten på något nytt, jag började min YH utbildning i Malmö på Medieinstitutet som FrontEnd Developer. Ett av de läskigaste besluten i vuxen ålder, men ack så underbart!.</p>
+            <p>Den 27 Augusti var starten på något nytt, jag började min YH utbildning i Malmö på Medieinstitutet som
+                FrontEnd Developer. Ett av de läskigaste besluten i vuxen ålder, men ack så underbart!.</p>
         </div>
         <div class="blog-post">
             <h3>Blogg Inlägg 2</h3>
             <p>Innehåll från ditt andra blogg inlägg.</p>
         </div>
-        <!-- Du kan lägga till fler blogg inlägg -->
+
     </section>
 
-    <!-- Kontaktformulär -->
+    <!-- Kontaktformulär med inmatning av Epost, namn och meddelande
+     samt positionering till kontakt formuläret  -->
     <section class="section contact-form" id="contact">
         <h2>Kontakta mig</h2>
         <form>
@@ -97,9 +108,9 @@
         </form>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer med namn på skapare samt Copyright märkning -->
     <footer>
-        <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet -  Alla rättigheter förbehållna.</p>
+        <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet</p>
     </footer>
 
 </body>
