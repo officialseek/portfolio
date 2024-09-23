@@ -1,4 +1,4 @@
-body {
+/* .body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -12,8 +12,17 @@ body {
     max-width: 1905px;
     height: 500px;
     align-items: center;
-    flex-direction: column;
+    flex-direction: column; */
 
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 90vw;
+    height: 90vh;
+    padding: 20px;
+    margin: 5px;
+    
 }
 
 
@@ -23,10 +32,7 @@ body {
     width: 100px;
 }
 
-.navbar {
-    display: flex;
-    flex-direction: column;
-}
+
 
 nav {
     background-color: #333;
@@ -41,8 +47,9 @@ nav ul {
     justify-content: space-around;
 }
 
-nav ul li {
-    color: white;
+.nav ul li {
+    color: rgb(169, 28, 28);
+    justify-content: space-around;
 }
 
 nav ul li a {
@@ -51,34 +58,44 @@ nav ul li a {
     padding: 8px 16px;
 }
 
-/* header {
-    height: 400px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    text-align: center;
-} */
+.info-block ul {
+    list-style-type: none;
 
-.section {
-    padding: 2rem;
 }
 
-.info-block,
+.info-block {
+    display: flex;
+    flex-direction: row;
+    background-color: aqua;
+    text-align: center;
+    width: 90vw;
+    justify-content: space-evenly;
+}
+
+.info-block li {
+    display: flex;
+    justify-content: left;
+}
+
+
+
+.info-block > div {
+    border: 1px solid black;
+    align-items: start;
+    
+}
+
+
 .skills-block {
+    flex-direction: column;
+    background-color: lightcoral;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    width: 90vw;
+
+
 }
 
-.info-block div,
-.skills-block div {
-    width: 30%;
-    padding: 1rem;
-    background-color: #cdf5d7;
-    margin: 1rem 0;
-    text-align: center;
-}
 
 .blog-section {
     padding: 2rem;
@@ -114,7 +131,7 @@ nav ul li a {
 }
 
 footer {
-    background-color: #333;
+    background-color: #110927;
     color: white;
     text-align: center;
     padding: 1rem;
@@ -125,10 +142,10 @@ footer {
 /* MediaQueries */
 
 
-@media screen and (min-width 400px) {
+/* @media all and (min-width: 400px) {
     #hero {
         max-width: 430px;
-        height 100vh;
+        height: 100vh;
     }
     #about {
         display: flex;
@@ -141,4 +158,4 @@ footer {
 
 }
 
-
+ */ 

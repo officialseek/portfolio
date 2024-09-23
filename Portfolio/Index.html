@@ -8,110 +8,111 @@
     <link rel="stylesheet" href="style.css">
 
 
-<!-- Sebastian Ekström - Inlämningsuppgift 2, HTML & CSS -->
+    <!-- Sebastian Ekström - Inlämningsuppgift 2, HTML & CSS -->
 </head>
 
 <body>
 
     <!-- Navbar -->
-    <div class="Navbar">
-        <nav> 
-            <img src="img/seek.png" id="logotype" alt="logotype">
-            <ul>
-                <li><a href="#hero">Hem</a></li>
-                <li><a href="#about">Om mig</a></li>
-                <li><a href="#skills">Färdigheter</a></li>
-                <li><a href="#blog">Blogg</a></li>
-                <li><a href="#contact">Kontakt</a></li>
-            </ul>
-        </nav>
-
-        <!-- Min Hero sektion, anledning till container innan, pga css  -->
-        <div class="containerHero">
+    <div class="container">
+        <div class="Navbar">
+            <nav>
+                <img src="img/seek.png" id="logotype" alt="logotype">
+                <ul>
+                    <li><a href="#hero">Hem</a></li>
+                    <li><a href="#about">Om mig</a></li>
+                    <li><a href="#skills">Färdigheter</a></li>
+                    <li><a href="#blog">Blogg</a></li>
+                    <li><a href="#contact">Kontakt</a></li>
+                </ul>
+            </nav>
+            <!-- Min Hero sektion, anledning till container innan, pga css  -->
             <header id="hero">
                 <!-- <img  id="heroimg" src="img/Sunset_cropped.jpg" alt="solnedgång"> -->
                 <h1>Välkommen till min portfolio!</h1>
                 <p>Jag är en studerande FrontEnd Developer</p>
-
             </header>
         </div>
+        <!-- Säljande information om mig som utvecklare med färdigheter och intressen,
+         samt vidarebefodran till Om mig sektionen-->
+        <section class="section" id="about">
+            <h2>Om mig</h2>
+            <div class="info-block">
+                <div>
+                    <h3>Yrkeserfarenhet</h3>
+                <ul>
+                    <li>Lastbilschaufför</li>
+                    <li>Maskinförare</li>
+                    <li>Stenläggare</li>                    
+                </ul>
+             </div>
+                <div>
+                    <h3>Personliga Intressen</h3>
+                    <ul>
+                        <li>Jakt</li>
+                        <li>Lantbruk</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3>Övrig information</h3>
+                    <ul>
+                        <li>Något som är kul</li>
+                        <li>Något som är mindre kul</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="skills">
+            <h2>Mina Färdigheter</h2>
+            <div class="skills-block">
+                <div>
+                    <h3>HTML & CSS</h3>
+                    <p>Under inlärning. Baskunskaper.</p>
+                </div>
+                <div>
+                    <h3>JavaScript</h3>
+                    <p>Påbörjar JavaScript kurs inom kort.</p>
+                </div>
+                <div>
+                    <h3>React</h3>
+                    <p>Beskrivning av din färdighet.</p>
+                </div>
+                <div>
+                    <h3>Node.js</h3>
+                    <p>Beskrivning av din färdighet.</p>
+                </div>
+            </div>
+        </section>
+        <!-- Blogg sektion med inlägg + bilder samt vidarebefordan till blog sektionen-->
+        <section class="section blog-section" id="blog">
+            <h2>Blogg</h2>
+            <div class="blog-post">
+                <h3>Starten</h3>
+                <p>Den 27 Augusti var starten på något nytt, jag började min YH utbildning i Malmö på Medieinstitutet
+                    som
+                    FrontEnd Developer. Ett av de läskigaste besluten i vuxen ålder, men ack så underbart!.</p>
+            </div>
+            <div class="blog-post">
+                <h3>Blogg Inlägg 2</h3>
+                <p>Innehåll från ditt andra blogg inlägg.</p>
+            </div>
+        </section>
+        <!-- Kontaktformulär med inmatning av Epost, namn och meddelande
+         samt positionering till kontakt formuläret  -->
+        <section class="section contact-form" id="contact">
+            <h2>Kontakta mig</h2>
+            <form>
+                <input type="text" name="name" placeholder="Ditt namn" required>
+                <input type="email" name="email" placeholder="Din e-post" required>
+                <textarea name="message" placeholder="Ditt meddelande" rows="5" required></textarea>
+                <input type="submit" value="Skicka">
+            </form>
+        </section>
+        <!-- Footer med namn på skapare samt Copyright märkning -->
+        <footer>
+            <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet</p>
+        </footer>
     </div>
-
-    <!-- Säljande information om mig som utvecklare med färdigheter och intressen,
-     samt vidarebefodran till Om mig sektionen-->
-
-    <section class="section" id="about">
-        <h2>Om mig</h2>
-        <div class="info-block">
-            <div>
-                <h3>Yrkeserfarenhet</h3>
-                <p>Säljande information om dina tjänster.</p>
-            </div>
-            <div>
-                <h3>Personliga Intressen</h3>
-                <p>Säljande information om dina projekt.</p>
-            </div>
-            <div>
-                <h3>Övrig information</h3>
-                <p>Säljande information om dina erfarenheter.</p>
-            </div>
-        </div>
-    </section>
-
-
-    <section class="section" id="skills">
-        <h2>Mina Färdigheter</h2>
-        <div class="skills-block">
-            <div>
-                <h3>HTML & CSS</h3>
-                <p>Under inlärning. Baskunskaper.</p>
-            </div>
-            <div>
-                <h3>JavaScript</h3>
-                <p>Påbörjar JavaScript kurs inom kort.</p>
-            </div>
-            <div>
-                <h3>React</h3>
-                <p>Beskrivning av din färdighet.</p>
-            </div>
-            <div>
-                <h3>Node.js</h3>
-                <p>Beskrivning av din färdighet.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Blogg sektion med inlägg + bilder samt vidarebefordan till blog sektionen-->
-    <section class="section blog-section" id="blog">
-        <h2>Blogg</h2>
-        <div class="blog-post">
-            <h3>Starten</h3>
-            <p>Den 27 Augusti var starten på något nytt, jag började min YH utbildning i Malmö på Medieinstitutet som
-                FrontEnd Developer. Ett av de läskigaste besluten i vuxen ålder, men ack så underbart!.</p>
-        </div>
-        <div class="blog-post">
-            <h3>Blogg Inlägg 2</h3>
-            <p>Innehåll från ditt andra blogg inlägg.</p>
-        </div>
-
-    </section>
-
-    <!-- Kontaktformulär med inmatning av Epost, namn och meddelande
-     samt positionering till kontakt formuläret  -->
-    <section class="section contact-form" id="contact">
-        <h2>Kontakta mig</h2>
-        <form>
-            <input type="text" name="name" placeholder="Ditt namn" required>
-            <input type="email" name="email" placeholder="Din e-post" required>
-            <textarea name="message" placeholder="Ditt meddelande" rows="5" required></textarea>
-            <input type="submit" value="Skicka">
-        </form>
-    </section>
-
-    <!-- Footer med namn på skapare samt Copyright märkning -->
-    <footer>
-        <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet</p>
-    </footer>
 
 </body>
 
