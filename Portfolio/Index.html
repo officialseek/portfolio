@@ -13,39 +13,48 @@
 
 <body>
 
-    <!-- Navbar -->
-    <div class="container">
-        <div class="Navbar">
-            <nav>
-                <img src="img/seek.png" id="logotype" alt="logotype">
-                <ul>
-                    <li><a href="#hero">Hem</a></li>
-                    <li><a href="#about">Om mig</a></li>
-                    <li><a href="#skills">Färdigheter</a></li>
-                    <li><a href="#blog">Blogg</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
-                </ul>
-            </nav>
-            <!-- Min Hero sektion, anledning till container innan, pga css  -->
-            <header id="hero">
-                <!-- <img  id="heroimg" src="img/Sunset_cropped.jpg" alt="solnedgång"> -->
+    <!-- Navbar med inkluderande hamburgarmeny-->
+
+    <nav class="navbar"> 
+
+        <img src="img/seek.png" id="logotype" alt="logotype">
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <ul class="menu">
+            <li><a href="#hero">Hem</a></li>
+            <li><a href="#about">Om mig</a></li>
+            <li><a href="#skills">Färdigheter</a></li>
+            <li><a href="#blog">Blogg</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </nav>
+    
+    </div>
+    <div class="flex-container">
+        <!-- Min Hero sektion, anledning till container innan, pga css  -->
+        <header id="hero">
+            <div class="hero-text">
                 <h1>Välkommen till min portfolio!</h1>
                 <p>Jag är en studerande FrontEnd Developer</p>
-            </header>
-        </div>
+            </div>
+        </header>
         <!-- Säljande information om mig som utvecklare med färdigheter och intressen,
-         samt vidarebefodran till Om mig sektionen-->
+             samt vidarebefodran till Om mig sektionen-->
         <section class="section" id="about">
             <h2>Om mig</h2>
             <div class="info-block">
                 <div>
                     <h3>Yrkeserfarenhet</h3>
-                <ul>
-                    <li>Lastbilschaufför</li>
-                    <li>Maskinförare</li>
-                    <li>Stenläggare</li>                    
-                </ul>
-             </div>
+                    <ul>
+                        <li>Lastbilschaufför</li>
+                        <li>Maskinförare</li>
+                        <li>Stenläggare</li>
+                    </ul>
+                </div>
                 <div>
                     <h3>Personliga Intressen</h3>
                     <ul>
@@ -98,7 +107,7 @@
             </div>
         </section>
         <!-- Kontaktformulär med inmatning av Epost, namn och meddelande
-         samt positionering till kontakt formuläret  -->
+             samt positionering till kontakt formuläret  -->
         <section class="section contact-form" id="contact">
             <h2>Kontakta mig</h2>
             <form>
@@ -112,6 +121,7 @@
         <footer>
             <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet</p>
         </footer>
+    </div>
     </div>
 
 </body>

@@ -1,55 +1,183 @@
-/* .body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
+/* body {
+    display: flex;
+} */
+
+
+/* Wrappad content  */
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+}
+
+.flex-container>* {
+    width: 100%;
+    border: 2px solid black;
 }
 
 #hero {
-    display: flex;
-    background-image: url(img/Sunset_cropped.jpg);
-    justify-content: center;
+    background-image: url(img/aibild\ 2.jpeg);
+    height: 50vh;
     background-repeat: no-repeat;
-    max-width: 1905px;
-    height: 500px;
-    align-items: center;
-    flex-direction: column; */
-
-
-.container {
+    background-size: cover;
     display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%; 
+    padding: 1rem;
+    box-sizing: border-box; 
+    min-height: 300px;
+}
+
+/* Grundläggande styling för navbar */
+
+
+
+.navbar {
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #333;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: xx-large;
+}
+
+#logotype {
+    width: 50px;
+}
+
+
+/* Döljer menyn som standard och visar hamburgermeny */
+.menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    flex-grow: 1;
+}
+
+.menu li {
+    margin: 0 10px;
+}
+
+.menu li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+}
+
+.hamburger {
+    display: none;
     flex-direction: column;
-    width: 90vw;
-    height: 90vh;
-    padding: 20px;
-    margin: 5px;
-    
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* För mobilläge */
+@media (max-width: 856px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+        position: absolute;
+        top: 100px;
+        left: 0;
+    }
+
+    .menu li {
+        text-align: center;
+        margin: 0;
+    }
+
+    #menu-toggle:checked+.hamburger+.menu {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+}
+
+/* 
+#hero {
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px;
+    width: 100vw;
+    border-radius: 10px;
+
+}
+
+.hero-text {
+    display: flex;
+    position: absolute;
+    color: white;
+    flex-direction: column;
+    font-size: xx-large;
+
+}
+
+.hero-text p {
+    text-align: center;
+    margin-top: 38%;
 }
 
 
 
 /* Min logotype i navbaren */
+/*
 #logotype {
-    width: 100px;
+    width: 10%;
 }
+
 
 
 
 nav {
+    height: 100px;
     background-color: #333;
+    width: 100%;
     padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 36px;
 }
 
-nav ul {
+
+
+nav ul li {
     list-style-type: none;
     margin: 0;
-    padding: 0;
     display: flex;
+    flex-direction: row;
     justify-content: space-around;
+
 }
 
+/*
 .nav ul li {
     color: rgb(169, 28, 28);
     justify-content: space-around;
+
 }
 
 nav ul li a {
@@ -79,10 +207,10 @@ nav ul li a {
 
 
 
-.info-block > div {
+.info-block>div {
     border: 1px solid black;
     align-items: start;
-    
+
 }
 
 
@@ -111,7 +239,6 @@ nav ul li a {
 .contact-form {
     display: flex;
     align-items: end;
-    /*styr Kontaktform */
     flex-direction: column;
     padding: 2rem;
 }
@@ -136,26 +263,25 @@ footer {
     text-align: center;
     padding: 1rem;
 }
-
+*/
 
 
 /* MediaQueries */
 
 
-/* @media all and (min-width: 400px) {
+@media all and (max-width: 400px) {
     #hero {
-        max-width: 430px;
-        height: 100vh;
+        height: 15vh;
     }
+
     #about {
         display: flex;
         flex-direction: column;
     }
+
     #skills {
         display: flex;
         flex-direction: column;
     }
 
 }
-
- */ 
