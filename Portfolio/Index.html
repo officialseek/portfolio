@@ -6,18 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Sebastian Ekström</title>
     <link rel="stylesheet" href="style.css">
-
-
-    <!-- Sebastian Ekström - Inlämningsuppgift 2, HTML & CSS -->
 </head>
 
 <body>
-
-    <!-- Navbar med inkluderande hamburgarmeny-->
-
-    <nav class="navbar"> 
-
-        <img src="img/seek.png" id="logotype" alt="logotype">
+    <!-- Navbar med inkluderande hamburgarmeny -->
+    <nav class="navbar">
+        <img src="img/logo/seek.png" id="logotype" alt="logotype">
         <input type="checkbox" id="menu-toggle">
         <label for="menu-toggle" class="hamburger">
             <span></span>
@@ -32,98 +26,131 @@
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
-    
-    </div>
+
     <div class="flex-container">
-        <!-- Min Hero sektion, anledning till container innan, pga css  -->
+        <!-- Min Hero sektion -->
         <header id="hero">
             <div class="hero-text">
                 <h1>Välkommen till min portfolio!</h1>
-                <p>Jag är en studerande FrontEnd Developer</p>
+                <p>Jag är en studerande FrontEnd Developer med stora förhoppningar och kunskaper!</p>
+                <a href="#contact" class="formButton">Quick contact</a>
             </div>
         </header>
-        <!-- Säljande information om mig som utvecklare med färdigheter och intressen,
-             samt vidarebefodran till Om mig sektionen-->
+
+        <!-- Säljande information om mig -->
         <section class="section" id="about">
             <h2>Om mig</h2>
             <div class="info-block">
-                <div>
+                <div class="card">
                     <h3>Yrkeserfarenhet</h3>
-                    <ul>
-                        <li>Lastbilschaufför</li>
-                        <li>Maskinförare</li>
-                        <li>Stenläggare</li>
-                    </ul>
+                    <p>Lastbilschaufför</p>
+                    <p>Maskinförare</p>
+                    <p>Stenläggare</p>
                 </div>
-                <div>
+                <div class="card">
                     <h3>Personliga Intressen</h3>
-                    <ul>
-                        <li>Jakt</li>
-                        <li>Lantbruk</li>
-                    </ul>
+                    <p>Jakt</p>
+                    <p>Lantbruk</p>
                 </div>
-                <div>
+                <div class="card">
                     <h3>Övrig information</h3>
-                    <ul>
-                        <li>Något som är kul</li>
-                        <li>Något som är mindre kul</li>
-                    </ul>
+                    <p>Något som är kul</p>
+                    <p>Något som är mindre kul</p>
                 </div>
             </div>
         </section>
+
         <section class="section" id="skills">
-            <h2>Mina Färdigheter</h2>
+                <h2>Mina Färdigheter</h2>
             <div class="skills-block">
-                <div>
+                <div class="card">
                     <h3>HTML & CSS</h3>
                     <p>Under inlärning. Baskunskaper.</p>
+                    <img src="img/skills/html.jpg" alt="html">
                 </div>
-                <div>
+                <div class="card">
                     <h3>JavaScript</h3>
                     <p>Påbörjar JavaScript kurs inom kort.</p>
+                    <img src="img/skills/javascript.png" alt="javascript">
                 </div>
-                <div>
+                <div class="card">
                     <h3>React</h3>
                     <p>Beskrivning av din färdighet.</p>
+                    <img src="img/skills/react.png" alt="react">
                 </div>
-                <div>
+                <div class="card">
                     <h3>Node.js</h3>
                     <p>Beskrivning av din färdighet.</p>
+                    <img src="img/skills/nodejs.png" alt="nodejs">
                 </div>
             </div>
         </section>
-        <!-- Blogg sektion med inlägg + bilder samt vidarebefordan till blog sektionen-->
-        <section class="section blog-section" id="blog">
-            <h2>Blogg</h2>
-            <div class="blog-post">
-                <h3>Starten</h3>
-                <p>Den 27 Augusti var starten på något nytt, jag började min YH utbildning i Malmö på Medieinstitutet
-                    som
-                    FrontEnd Developer. Ett av de läskigaste besluten i vuxen ålder, men ack så underbart!.</p>
-            </div>
-            <div class="blog-post">
-                <h3>Blogg Inlägg 2</h3>
-                <p>Innehåll från ditt andra blogg inlägg.</p>
+
+        <h2>Blogg</h2>
+        <section class="blog-section" id="blog">
+            
+            <div class="content-container">
+                <!-- Blogginlägg sektion -->
+                <div class="blog-posts">
+                    <div class="blog-post">
+                        <h3 id="post1"> Skrivmaskinens magiska verk..</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero illo repellat mollitia! Officia corrupti voluptas minus esse, omnis illum corporis optio eaque odio architecto iste. Voluptate debitis assumenda neque impedit eius sint nemo. Accusantium, modi incidunt delectus, corrupti assumenda culpa architecto rerum, neque nemo possimus nam qui veritatis. Voluptates, rerum.</p>
+                        <img src="img/blog/typewriter.jpg" alt="typewriter">
+                    </div>
+                    <div class="blog-post">
+                        <h3 id="post2">Meditationens underverk!</h3>
+                        <img src="img/blog/meditation.png" alt="meditation">
+                        <p>Ojoj säger jag bara! Vilken dag... Dagen börjar med total kaos, och slutar med meditation som alla borde göra !</p>
+                    </div>
+                    <div class="blog-post">
+                        <h3 id="post3">Frukosten som alla borde njuta av</h3>
+                        <p>Frukost.... Nog något av de mest underskattade målet mat man kan tänka sig. En bra frukost säger många att de orskakar diverse sjukdommar, medans jag inte klarar av att vara människa om jag inte får min frukost.</p>
+                        <img src="img/blog/breakfast.jpg" alt="breakfast">
+                    </div>
+                    <div class="blog-post">
+                        <h3 id="post4">Vackraste delen av hösten måste vara..</h3>
+                        <img src="img/blog/autum.png" alt="autum">
+                        <p>Aaaahh! Hösten är kommen !</p>
+                        <p>När hösten slår upp dörrarna i vardagen, då förändras allt mellan himmel och jord. Inte bara vi människor, men alla djur i diverse biotper förändrar levnadssättet, omställning med eventuella pälsbeklädnader. Fantastiskt, eller hur?? </p>
+                    </div>
+                </div>
+                <!-- Senaste inlägg sektion -->
+                <aside class="aside">
+                    <h2>Populäraste inläggen</h2>
+                    <a href="#post3">Mest lästa inlägget</a>
+                    <a href="#post1">Andra mest lästa inlägget</a>
+                    <a href="#post4">Förra månadens topp inlägg</a>
+                    <a href="#post2">Mest lästa genom tiderna</a>
+                </aside>
             </div>
         </section>
-        <!-- Kontaktformulär med inmatning av Epost, namn och meddelande
-             samt positionering till kontakt formuläret  -->
-        <section class="section contact-form" id="contact">
+
+    </div>
+
+    <!-- Kontaktformulär -->
+    <div class="form-container">
+        <section class="contact-form" id="contact">
             <h2>Kontakta mig</h2>
             <form>
-                <input type="text" name="name" placeholder="Ditt namn" required>
-                <input type="email" name="email" placeholder="Din e-post" required>
-                <textarea name="message" placeholder="Ditt meddelande" rows="5" required></textarea>
+                <label for="namn">Namn</label>
+                <input type="text" name="name" id="namn" placeholder="Ditt namn" required>
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Din e-post" required>
+                <label for="meddelande">Skriv meddelande</label>
+                <textarea name="message" id="meddelande" placeholder="Ditt meddelande" rows="5" required></textarea>
                 <input type="submit" value="Skicka">
             </form>
         </section>
-        <!-- Footer med namn på skapare samt Copyright märkning -->
-        <footer>
-            <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet</p>
-        </footer>
-    </div>
     </div>
 
+    <!-- Footer -->
+    <footer>
+        <div>
+            <p>&copy; 2024 Sebastian Ekström @ MediaInstitutet / 24-09-27</p>
+            <p>Drottninggatan 4B</p>
+            <p>212 11</p>
+            <p>Malmö</p>
+        </div>
+    </footer>
 </body>
-
 </html>
