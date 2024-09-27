@@ -1,11 +1,13 @@
+/* Min importerade font, kommer sporadiskt i olika delar, annars har jag valt en annan "tråkig" font  */
+
 @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300');
 
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(216, 68, 239);
+    background-color: rgb(216, 68, 239);  /* La till lite skysst Neon lila/rosa som en bakgrund */
 }
 
-/* Wrappad content  */
+
 .flex-container {
     display: flex;
     flex-direction: column;
@@ -17,7 +19,7 @@ body {
     width: 100%;
 }
 
-/* Hero Section */
+/* Min Hero Section */
 #hero {
     background-image: url(img/hero/aibild\ 2.jpeg);
     background-color: #cacaca;
@@ -34,7 +36,7 @@ body {
     color: white;
     text-align: center;
 }
-
+/* Knappen i min Hero för att komma till kontakta mig sektionen */
 .formButton {
     border-radius: 40px;
     background-color: #e80dbc;
@@ -50,11 +52,12 @@ body {
     background-color: rgb(52, 243, 240);
 }
 
-.hero-text > p {
+.hero-text>p {
     text-align: center;
     font-size: 2rem;
     text-transform: capitalize;
 }
+
 .info-block {
     display: flex;
     justify-content: space-between;
@@ -72,7 +75,7 @@ body {
     padding: 20px;
     box-shadow: 0 8px 10px rgb(173, 18, 137);
     border-radius: 8px;
-    flex: 1 1 30%; 
+    flex: 1 1 30%;
     box-sizing: border-box;
     text-align: left;
 }
@@ -82,11 +85,13 @@ body {
     text-decoration: underline;
     font-size: 25px;
 }
+
 .card:nth-of-type(3)>img,
 .card:nth-of-type(1)>img {
     float: right;
     margin-right: 1rem;
 }
+
 .skills-block {
     display: flex;
     justify-content: space-between;
@@ -117,22 +122,23 @@ body {
 }
 
 .blog-post {
-    flex: 1 1 calc(50% - 20px); 
+    flex: 1 1 calc(50% - 20px);
     background-color: #cacaca;
     padding: 15px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     box-sizing: border-box;
 }
+
 .blog-post img {
     max-width: 100%;
     height: auto;
 }
-    
-    
+
+
 
 .aside {
-    width: 25%; 
+    width: 25%;
     background-color: #cacaca;
     padding: 15px;
     border-radius: 8px;
@@ -169,7 +175,6 @@ body {
     border-radius: 10px;
     box-sizing: border-box;
     box-shadow: 10px 0 30px rgb(75, 143, 63)
-
 }
 
 .contact-form h2 {
@@ -182,10 +187,7 @@ form {
     gap: 0.5rem;
 }
 
-label {
-    display: flex;
 
-}
 
 /* Grundläggande styling för navbar */
 .navbar {
@@ -257,14 +259,14 @@ footer {
 
 /* För medelstora skärmar (under 1100px) */
 @media (max-width: 1100px) {
-    .info-block  {
-        flex-direction: column; 
+    .info-block {
+        flex-direction: column;
     }
 
     .skills-block {
         flex-direction: column;
     }
-    
+
     .content-container {
         flex-direction: column;
     }
@@ -273,13 +275,15 @@ footer {
         width: 100%;
         margin-bottom: 20px;
     }
+
     .blog-posts {
-        width: 100%; 
+        width: 100%;
     }
 
     .blog-post {
-        flex: 1 1 calc(100% - 20px); 
+        flex: 1 1 calc(100% - 20px);
     }
+
     .menu {
         display: none;
         flex-direction: column;
@@ -289,6 +293,7 @@ footer {
         top: 100px;
         left: 0;
     }
+
     .menu li {
         text-align: center;
         margin: 0;
@@ -301,6 +306,7 @@ footer {
     .hamburger {
         display: flex;
     }
+
     .hero-text {
         font-size: medium;
     }
@@ -308,8 +314,8 @@ footer {
 
 /* För surfplattor (under 768px) */
 @media (max-width: 768px) {
-    .info-block  {
-        flex-direction: column; 
+    .info-block {
+        flex-direction: column;
     }
 
     .skills-block {
@@ -317,13 +323,13 @@ footer {
     }
 
     .blog-posts {
-        width: 100%; 
+        width: 100%;
     }
 }
 
 /* För mobiler (under 576px) */
 @media (max-width: 576px) {
     .aside {
-        display: none; 
+        display: none;
     }
 }
